@@ -1,0 +1,21 @@
+<div class="container" style="background:lightgreen; width:100%; height:600px;">
+<div class="container" style="background:#DDA0DD; padding: 10px; width:400px; height: 430px; ">
+<h2>---------- Task 1 -----------</h2>
+<h3> ---------------------------------</h3>            
+<b>Enter Email: </b>
+<input type="text" style="width:200px;" class="form-control" [(ngModel)]="box1" id="myTxt"  />
+<b>Enter Password: </b>
+<input class="form-control" style="width:200px;" [(ngModel)]="box2" type="text" (input)="disable($event)" placeholder="Enter password ">
+
+<input type="checkbox" name="myChk" id="myChk" value="" [disabled]="isDisabled" (change)="changeCheck($event)" />I Agree T/C<br>
+<input type="submit" [disabled]="disabledAgreement" class="btn btn-primary btn-sm" name="submit" value="submit" />    
+
+{{valLength}}
+
+</div>
+</div>
+
+
+
+
+
